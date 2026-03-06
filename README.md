@@ -41,3 +41,9 @@ This repo works as a simple standards-checking sample. Run the CLI against the i
 
 - Uses only dummy example data
 - Contains no credentials or external integrations
+
+## March 2026 Refresh
+
+- Public-safe packaging reviewed
+- Compliance checks re-validated
+- Repository metadata and documentation polished
