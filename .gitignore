@@ -3,4 +3,5 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
+audit_output.json
 .pytest_cache/
