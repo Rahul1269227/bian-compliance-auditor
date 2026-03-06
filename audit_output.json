@@ -1,0 +1,9 @@
+{
+  "compliant": true,
+  "score": 100,
+  "issues": [],
+  "checked_operations": [
+    "retrieveParty",
+    "initiateParty"
+  ]
+}

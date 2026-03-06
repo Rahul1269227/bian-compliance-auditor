@@ -1,0 +1,40 @@
+openapi: 3.0.3
+info:
+  title: Sample Service Domain API
+  version: 1.0.0
+  x-service-domain: Party Administration
+paths:
+  /parties/{partyId}:
+    get:
+      operationId: retrieveParty
+      description: Retrieve a party record.
+      responses:
+        "200":
+          description: Party returned
+  /parties:
+    post:
+      operationId: initiateParty
+      description: Initiate a new party record.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PartyRecord"
+      responses:
+        "201":
+          description: Party created
+components:
+  schemas:
+    PartyRecord:
+      type: object
+      properties:
+        partyReference:
+          type: string
+        partyStatus:
+          type: string
+        partyRecord:
+          type: object
+          properties:
+            displayName:
+              type: string
